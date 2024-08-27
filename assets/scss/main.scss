@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'halimun';
+    src: url('../fonts/Halimun/Halimun.ttf');
+}
+$primary-color: #F5F0EA;
+$secondary-color: #DFC7B8;
+$tertiary-color: #555555;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+body {
+    background-color: $primary-color;
+    margin: 0 auto;
+}
+//----------------------------------------BUTTON ------------------------------------------------
+.btn-primary {
+    a {
+        text-decoration: none;
+        color: $tertiary-color;
+        background-color: $primary-color;
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+        border : 2px solid $secondary-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    a:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border : 2px solid $primary-color;
+        box-shadow: none;
+    }
+}
+.btn-secondary {
+    a {
+        text-decoration: none;
+        color: $tertiary-color;
+        background-color: $secondary-color;
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+        border : 2px solid $tertiary-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    a:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border : 2px solid $secondary-color;
+        box-shadow: none
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    .logo{
+        font-size: 1.5rem;
+        font-family: 'halimun', sans-serif;
+        justify-self: start;
+        color: $tertiary-color;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        gap: 1.5rem;
+
+        a {
+            text-decoration: none;
+            color: $tertiary-color;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        a:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.banner {
+    background-image: url('../img/banner.jpg') ;
+    height: 412px;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+
+    .text-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        gap: 1rem;
+        h1 {
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 1.7rem;
+        }
+        p {
+            color: $primary-color;
+            font-size: 1rem;
+            max-width: 500px;
+            padding-bottom: 1rem;
+        }
+        
+    }
+}
+
+
+// ------------------------------------- ABOUT --------------------------------------------
+#text-about {
+    background-color: $secondary-color;
+    width: 100%;
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0; 
+
+        .svg-about {
+            display: flex;
+            p { 
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                color: $tertiary-color;
+            }
+        }
+        .text-about {
+            color: $tertiary-color;
+            max-width: 1000px;
+            padding: 2rem 0;
+            p {
+                text-align: center;
+                line-height: 1.9rem;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+// ------------------------------------- SOINS --------------------------------------------
+
+#soins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    h2 {
+        color: $tertiary-color;
+        font-size: 1.5rem;
+        font-family: 'halimun', sans-serif;
+        padding-bottom: 2rem;
+    }
+    .soins-primary {
+        width: 100%;
+        .card-soin {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            .img-soin {
+                padding: 1rem 0;;
+                img {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 5px;
+                    border: 2px solid $secondary-color;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+            .text-soin {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                justify-content: space-between;
+                gap: 1rem;
+                h3 {
+                    color: $tertiary-color;
+                    text-transform: uppercase;
+                }
+                p {
+                    color: $tertiary-color;
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .soins-secondary {
+        width: 100%;
+        background-color: $secondary-color;
+        .card-soin {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            .img-soin {
+                padding: 2rem 0;
+                img {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 5px;
+                    border: 1px solid $primary-color;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+            .text-soin {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                justify-content: space-between;
+                gap: 1rem;
+                h3 {
+                    color: $tertiary-color;
+                    text-transform: uppercase;
+                }
+                p {
+                    color: $tertiary-color;
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------- REVIEWS --------------------------------------------
+
+#reviews {
+    background-color: $secondary-color;
+    width: 100%;
+    justify-content: center;
+    h2 {
+        color: $tertiary-color;
+        font-size: 1.5rem;
+        font-family: 'halimun', sans-serif;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .reviews-container {
+        max-width: 1200px;
+        padding: 1rem 0 3rem 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        .cards-reviews {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            .card-review {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+                height: 350px;
+                background-color: $primary-color;
+                border-radius: 10px 10px 150px 150px;
+                gap: 1rem;
+                .name-author {
+                    padding: 1.5rem 0;
+                    color: $tertiary-color;
+                    font-size: 1.1rem;
+                }
+                .text-author{
+                    background-color: #fff;
+                    color: $tertiary-color;
+                    border-radius: 10px;
+                    padding: 1rem;
+                    width: 80%;
+                    text-align: center;
+                }
+                .stars-author {
+                    display: flex;
+                    gap: 0.5rem;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------- POSTS INSTAGRAM --------------------------------------------
+
+#posts-instagram {
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 0;
+    h2 {
+        color: $tertiary-color;
+        font-size: 1.5rem;
+        font-family: 'halimun', sans-serif;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .posts-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .card-post {
+            display: flex;
+            gap: 2rem;
+            
+        }
+    }
+}
