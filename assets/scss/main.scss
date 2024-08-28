@@ -319,15 +319,124 @@ body {
     }
     .posts-container {
         max-width: 1200px;
+        height: 350px;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
+        padding: 2.5rem 0;
 
         .card-post {
             display: flex;
-            gap: 2rem;
+            a {
+                text-decoration: none;
+                max-width: 120px;
+                max-height: 120px;
+                img {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 5px;
+                    border: 1px solid $secondary-color;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------- FOOTER --------------------------------------------
+
+footer {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #555;
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .footer-infos {
+            position: relative;
+            padding-right: 1.5rem;
+            .footer-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $tertiary-color;
+                p {
+                    font-family: 'halimun', sans-serif;
+                    line-height: 2.5rem;
+                }
+            }
+            .footer-social {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    text-decoration: none;
+                    color: $tertiary-color;
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .footer-tel {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    color: $tertiary-color;
+                    line-height: 2rem;
+                }
+            }
+            .footer-adress {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    color: $tertiary-color;
+                    text-align: center;
+                }
+            }
+        }
+        .footer-menu {
+            position: relative;
+            padding-right: 1.5rem;
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                a {
+                    text-decoration: none;
+                    color: $tertiary-color;
+                }
+            }
+        }
+        .footer-legal {
+            display: flex;
+            a {
+                text-decoration: none;
+                color: $tertiary-color;
+            }
+        }
+        .footer-infos::after,
+        .footer-menu::after {
+            content: "";
+            position: absolute;
+            top: 50%; /* Positionne le pseudo-élément à mi-hauteur */
+            right: 0; /* Place le pseudo-élément à droite de la section */
+            transform: translateY(-50%); /* Centre verticalement le pseudo-élément */
+            width: 1px; /* Largeur de la bordure */
+            height: 60%; /* Hauteur personnalisée de la bordure (ajustez ce pourcentage) */
+            background-color: $tertiary-color; /* Couleur de la bordure */
             
         }
     }
