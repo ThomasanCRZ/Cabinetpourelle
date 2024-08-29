@@ -1,5 +1,6 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
 
+    // ------------------------------------- NAVBAR ------------------------------------------------
     .navbar {
         display: flex;
         align-items: center;
@@ -10,6 +11,272 @@
         #menu-btn {
             display: flex;
         }
-
     }
+
+    // ------------------------------------- BANNER ------------------------------------------------
+    .text-banner {
+        padding-left: 2rem;
+        .glassmorphism {
+            height: 220px!important;
+            width: 450px!important;
+            h1 {
+                font-size: 1.2rem!important;
+            }
+        }
+    }
+
+    // ------------------------------------- ABOUT ------------------------------------------------
+    .about {
+        .text-about {
+            padding: 2rem 1rem!important;
+        }
+    }
+
+    // ------------------------------------- SOINS ------------------------------------------------
+    #soins {
+        padding: 2rem 2rem !important;
+
+        .card-soin {
+            flex-direction: column!important;
+            align-items: center!important;
+            gap: 1rem!important;
+            padding: 2rem 0!important;
+
+            .text-soin {
+                text-align: center!important;
+            }
+        }
+        .soins-secondary {
+            .card-soin {
+                .img-soin {
+                    order: 1!important;
+                    padding: 1rem 0 !important;
+                }
+                .text-soin {
+                    order: 2!important;
+                }
+            }
+        }
+    }
+
+
+// ------------------------------------- REVIEWS & CAROUSEL ------------------------------------------------
+
+    .reviews-container {
+        .cards-reviews {
+            width: 100%;
+            padding: 0 !important;
+        }
+    }
+    .carousel {
+        .carousel-slides {
+            width: 80% !important;
+        }
+        .carousel-item {
+            padding: 0 !important;
+            max-width: 400px !important;
+            img {
+                width: 400px!important;
+                height: 400px!important;
+            }
+        }
+        .carousel-btn {
+            position: absolute;
+            &.next {
+                right: 30px!important;
+            }
+            &.prev {    
+                left: 30px!important;
+            }
+        }
+    }
+
+    // ------------------------------------- POSTS INSTAGRAM ------------------------------------------------
+
+    .posts-container {
+        grid-template-columns: repeat(2, 1fr)!important;
+        height: 700px!important;
+        width: 80% !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+}
+
+// ------------------------------------- MAX 390 ------------------------------------------------
+
+@media screen and (max-width: 767px) {
+    // ------------------------------------- NAVBAR ------------------------------------------------
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            font-size: 1rem !important;
+        }
+        .menu {
+            display: none;
+        }
+        #menu-btn {
+            display: flex;
+        }
+    }
+
+    // ------------------------------------- BANNER ------------------------------------------------
+    .text-banner {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        .glassmorphism {
+            height: 220px!important;
+            width: 350px!important;
+            text-align: center;
+            h1 {
+                font-size: 0.9rem!important;
+            }
+            p {
+                font-size: 0.85rem!important;
+            }
+            .btn-primary {
+                a {
+                    text-decoration: none;
+                    color: $tertiary-color;
+                    font-size: 0.8rem !important;
+                    background-color: $primary-color;
+                    padding: 0.5rem 2rem;
+                    border-radius: 3px;
+                    border : 2px solid $secondary-color;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+                a:hover {
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                    border: 2px solid $primary-color;
+                }
+            }
+        }
+    }
+
+    // ------------------------------------- ABOUT ------------------------------------------------
+    .about {
+        .text-about {
+            padding: 2rem 1rem!important;
+        }
+    }
+
+    // ------------------------------------- SOINS ------------------------------------------------
+    #soins {
+        padding: 2rem 2rem !important;
+        h2 {
+            font-size: 1.4rem!important;
+            text-align: center !important;
+        }
+        .card-soin {
+            flex-direction: column!important;
+            align-items: center!important;
+            gap: 1rem!important;
+            padding: 2rem 0!important;
+            .img-soin {
+                img {
+                    width: 200px!important;
+                    height: 200px!important;
+                }
+            }
+            .text-soin {
+                text-align: center!important;
+                width: 80% !important;
+                h3 {
+                    font-size: 1rem!important;
+                }
+                p {
+                    font-size: 0.9rem!important;
+                }
+            }
+        }
+        .soins-secondary {
+            .card-soin {
+                .img-soin {
+                    order: 1!important;
+                    padding: 1rem 0 !important;
+                }
+                .text-soin {
+                    order: 2!important;
+                }
+            }
+        }
+    }
+
+
+// ------------------------------------- REVIEWS & CAROUSEL ------------------------------------------------
+
+    .reviews-container {
+        .cards-reviews {
+            width: 100%;
+            padding: 0 !important;
+        }
+    }
+    .carousel {
+        .carousel-slides {
+            width: 100% !important;
+        }
+        .carousel-item {
+            padding: 0 !important;
+            max-width: 400px !important;
+            img {
+                width: 250px!important;
+                height: 250px!important;
+            }
+        }
+        .carousel-btn {
+            position: absolute;
+            &.next {
+                right: 0px!important;
+            }
+            &.prev {    
+                left: 0px!important;
+            }
+        }
+    }
+
+    // ------------------------------------- POSTS INSTAGRAM ------------------------------------------------
+
+    .posts-container {
+        grid-template-columns: repeat(1, 1fr)!important;
+        height: 1200px!important;
+        width: 80% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        padding-bottom: 5rem !important;
+    }
+
+    // ------------------------------------- FOOTER ------------------------------------------------
+    footer {
+        height: auto!important;
+        .footer-container {
+            height: auto!important;
+            flex-direction: column!important;
+            gap: 1rem!important;
+            padding: 2rem 0!important;
+        }
+        .footer-infos, .footer-menu {
+            padding: 0 0 1.5rem 0 !important;
+            text-align: center;
+        }
+        .footer-infos::after,
+        .footer-menu::after {
+            display: none !important;
+        }
+        .footer-infos::before,
+        .footer-menu::before {
+            content: "";
+            position: absolute;
+            bottom: 0px !important; /* Place le pseudo-élément en bas de la section */
+            left: 15% !important; /* Commence la bordure à gauche, utiliser `right: 0;` pour la droite si besoin */
+            width: 60% !important; /* Largeur personnalisée de la bordure */
+            height: 1px !important; /* Hauteur de la bordure */
+            background-color: $tertiary-color; /* Couleur de la bordure */
+        }
+    }
+    
+    
 }
