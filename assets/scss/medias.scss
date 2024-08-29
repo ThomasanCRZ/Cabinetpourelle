@@ -130,11 +130,15 @@
             height: 220px!important;
             width: 350px!important;
             text-align: center;
+            background-color: rgba($secondary-color, 0.7) !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3px);
+            border-radius: 10px;
             h1 {
                 font-size: 0.9rem!important;
             }
             p {
-                font-size: 0.85rem!important;
+                font-size: 0.9rem!important;
             }
             .btn-primary {
                 a {
