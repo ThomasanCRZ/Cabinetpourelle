@@ -26,8 +26,7 @@ body {
             transform: rotate(90deg);
             transition: 0.5s;
         }
-    }
-    
+    }  
 }
 
 .btn-primary {
@@ -511,12 +510,12 @@ footer {
         .footer-menu::after {
             content: "";
             position: absolute;
-            top: 50%; /* Positionne le pseudo-élément à mi-hauteur */
-            right: 0; /* Place le pseudo-élément à droite de la section */
-            transform: translateY(-50%); /* Centre verticalement le pseudo-élément */
-            width: 1px; /* Largeur de la bordure */
-            height: 60%; /* Hauteur personnalisée de la bordure (ajustez ce pourcentage) */
-            background-color: $tertiary-color; /* Couleur de la bordure */
+            top: 50%;
+            right: 0; 
+            transform: translateY(-50%); 
+            width: 1px; 
+            height: 60%; 
+            background-color: $tertiary-color; 
             
         }
     }

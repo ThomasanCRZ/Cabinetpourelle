@@ -1,0 +1,271 @@
+@import '../variables.scss', '../main.scss', '../medias.scss', '../fonts.scss';
+
+// ----------------------------------------- TITLE PRESTA -----------------------------------------
+#title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 3rem;
+    .title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        gap: 10rem;
+        h1 {
+            font-size: 2.5rem;
+            font-family: 'halimun';
+            color: $dark-color;
+            text-align: center;
+        }
+        img{
+            width: 250px;
+            height: 300px;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+    }
+}
+
+// ----------------------------------------- PRESENTATION -----------------------------------------
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3rem;
+    .presentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1200px;
+        width: 60%;
+        gap: 0.5rem;
+        p {
+            font-size: 1rem;
+            font-family: 'cormorant';
+            color: $dark-color;
+            text-align: center;
+        }
+    }
+}
+
+// ----------------------------------------- ILLUSTRATIONS -----------------------------------------
+
+#illustrations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    padding: 3rem 0;
+    .illustrations {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        gap: 2rem;
+        .illustration {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            gap: 0.5rem;
+            img {
+                width: 100px;
+                height: 83px;
+            };
+            p {
+                font-size: 1rem;
+                font-family: 'cormorant';
+                color: $dark-color;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// ----------------------------------------- INFOS -----------------------------------------
+
+#infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 60%;
+        gap: 2.5rem;
+        p {
+            font-size: 1rem;
+            font-family: 'cormorant';
+            color: $dark-color;
+            text-align: center;
+        }
+    }
+}
+
+// ----------------------------------------- BEFORES-AFTERS -----------------------------------------
+
+#befores-afters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    padding: 3rem 0;
+    background-color: $secondary-color;
+    .before-after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 60%;
+        gap: 2rem;
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+// ----------------------------------------- WHY -----------------------------------------
+
+#why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0 4rem 0;
+    .why {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        width: 60%;
+        gap: 2.5rem;
+        h3 {
+            font-size: 2rem;
+            font-family: 'halimun';
+            color: $dark-color;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        .why-text {
+            display: flex;
+            flex-direction: column;
+            justify-self: end;
+            gap: 0.5rem;
+            margin: 0 auto;
+            width: 55%;
+            .bold-italic {
+                font-family: 'cormorant';
+                color: $dark-color;
+                font-weight: bold;
+                font-style: italic;
+            }
+            p {
+                font-size: 1rem;
+                font-family: 'cormorant';
+                color: $dark-color;
+            }
+        }
+    }
+}
+
+// ----------------------------------------- DANGER -----------------------------------------
+
+#danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: $secondary-color;
+    .danger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        width: 60%;
+        gap: 2.5rem;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+
+// ----------------------------------------- DURATION PRICE -----------------------------------------
+
+#duration-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    .duration-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        width: 60%;
+        gap: 2.5rem;
+        .conseils {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: center;
+            p {
+                font-size: 1rem;
+            }
+            .citation {
+                font-family: 'cormorant';
+                color: $dark-color;
+                font-style: italic;
+                font-size: 1rem;
+            }
+        }
+        .duration {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        .btn-secondary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1.5rem;
+        }
+    }
+}
