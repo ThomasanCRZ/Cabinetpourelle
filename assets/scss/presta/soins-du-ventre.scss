@@ -7,7 +7,7 @@
     align-items: center;
     width: 100%;
     height: 400px;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     .title-page {
         display: flex;
         justify-content: center;
@@ -48,47 +48,12 @@
         gap: 0.5rem;
         p {
             font-size: 1rem;
-            font-family: 'cormorant';
+            font-family: 'lato';
             color: $dark-color;
             text-align: center;
         }
-    }
-}
-
-// ----------------------------------------- ILLUSTRATIONS -----------------------------------------
-
-#illustrations {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 3rem;
-    padding: 3rem 0;
-    .illustrations {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
-        gap: 2rem;
-        .illustration {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 300px;
-            gap: 0.5rem;
-            img {
-                width: 100px;
-                height: 83px;
-            };
-            p {
-                font-size: 1rem;
-                font-family: 'cormorant';
-                color: $dark-color;
-                text-align: center;
-            }
+        .bold{
+            font-weight: bold;
         }
     }
 }
@@ -105,15 +70,38 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         max-width: 1200px;
         width: 60%;
         gap: 2.5rem;
-        p {
-            font-size: 1rem;
-            font-family: 'cormorant';
+        h3 {
+            font-size: 1.5rem;
+            font-family: 'halimun';
             color: $dark-color;
             text-align: center;
+            padding-bottom: 2rem;
+            width: 100%;
+        }
+        .infos-review {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-size: 1rem;
+            font-family: 'montserrat';
+            color: $dark-color;
+            line-height: 1.5rem;
+        }
+        .name {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: start;
         }
     }
 }
@@ -166,52 +154,20 @@
         .why-text {
             display: flex;
             flex-direction: column;
-            justify-self: end;
-            gap: 0.5rem;
             margin: 0 auto;
-            width: 55%;
-            .bold-italic {
-                font-family: 'cormorant';
-                color: $dark-color;
-                font-weight: bold;
-                font-style: italic;
-            }
             p {
-                font-size: 1rem;
+                font-size: 1.1rem;
                 font-family: 'cormorant';
+                font-weight: 700;
+                font-style: italic;
                 color: $dark-color;
+                text-align: start;
+                line-height: 1.8rem;
             }
         }
     }
 }
 
-// ----------------------------------------- DANGER -----------------------------------------
-
-#danger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 0;
-    background-color: $secondary-color;
-    .danger {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1200px;
-        width: 60%;
-        gap: 2.5rem;
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            font-weight: 600;
-        }
-    }
-}
 
 // ----------------------------------------- DURATION PRICE -----------------------------------------
 
