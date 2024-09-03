@@ -1,0 +1,54 @@
+@media screen and (max-width: 767px){
+
+    //--------------------------------------- Title ------------------------------------------------
+    #title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 2rem !important;
+            padding: 2rem 0 !important;
+            h1 {
+                font-size: 2rem !important;
+            }
+            img {
+                width: 200px !important;
+                height: 250px !important;
+            }
+        }
+    }
+
+    //--------------------------------------- PRESENTATION -----------------------------------------
+    #presentation {
+        .presentation {
+            h2 {
+                text-align: center !important;
+            }
+        }
+    }
+
+    //--------------------------------------- ILLUSTRATIONS ------------------------------------------------
+
+    #illustrations {
+        .illustrations {
+            width: 80%;
+            height: 700px;
+            border-top-left-radius: 300px !important;
+            border-top-right-radius: 300px !important;
+            .illustration {
+                p {
+                    text-align: center !important;
+                    font-size: 1.1rem !important;
+                }
+            }
+        }
+
+    }
+
+}

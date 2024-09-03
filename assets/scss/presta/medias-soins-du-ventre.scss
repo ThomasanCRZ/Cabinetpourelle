@@ -1,0 +1,52 @@
+@media screen and (max-width: 767px){
+
+    //--------------------------------------- Title ------------------------------------------------
+    #title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 2rem !important;
+            padding: 2rem 0 !important;
+            h1 {
+                font-size: 1.7rem !important;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    //--------------------------------------- INFOS -----------------------------------------
+
+    #infos {
+        .infos {
+            .infos-review {
+                p {
+                    font-size: 0.7rem !important;
+                }
+            }
+        }
+    }
+
+    //--------------------------------------- BEFORES AFTERS -----------------------------------------
+
+    #befores-afters {
+        height: 800px !important;
+        .before-after {
+            flex-direction: column !important;
+
+            img {
+                width: 250px !important;
+                height: 250px !important;
+            }
+        }
+    }
+}
+

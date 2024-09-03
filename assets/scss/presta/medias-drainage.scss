@@ -1,0 +1,133 @@
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+//--------------------------------------- Title ------------------------------------------------
+    #title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 2rem !important;
+            padding: 2rem 0 !important;
+        }
+    }
+//--------------------------------------- Illustrations ------------------------------------------------
+
+    #illustrations {
+        .illustrations {
+            grid-template-columns: repeat(3, 0.5fr) !important;
+            gap: 5rem !important;
+        }
+    }
+
+    // ----------------------------------------- WHY -----------------------------------------
+
+    #why {
+        .why {
+            h3 {
+                font-size: 1.5rem !important;
+            }
+            .why-text {
+                width: 100% !important;
+            }
+        }
+    }
+
+    // ----------------------------------------- DANGER -----------------------------------------
+
+    #danger {
+        .danger {
+            h3 {
+                font-size: 1rem !important;
+                text-align: center;
+            }
+            p {
+                font-size: 0.9rem !important;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    //--------------------------------------- Title ------------------------------------------------
+    #title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 2rem !important;
+            padding: 2rem 0 !important;
+            h1 {
+                font-size: 1.5rem !important;
+            }
+            img {
+                width: 200px !important;
+                height: 250px !important;
+            }
+        }
+    }
+//--------------------------------------- Illustrations ------------------------------------------------
+
+    #illustrations {
+        .illustrations {
+            grid-template-columns: 1fr !important;
+            gap: 5rem !important;
+        }
+    }
+
+
+    // ----------------------------------------- BEFORE AFTER -----------------------------------------
+
+    #befores-afters {
+        height: 700px !important;
+        .before-after {
+            flex-direction: column !important;
+            
+            img {
+                width: 250px !important;
+                height: 250px !important;
+            }
+        }
+    }
+    // ----------------------------------------- WHY -----------------------------------------
+
+    #why {
+        .why {
+            h3 {
+                font-size: 1.5rem !important;
+            }
+            .why-text {
+                width: 100% !important;
+            }
+        }
+    }
+
+    // ----------------------------------------- DANGER -----------------------------------------
+
+    #danger {
+        .danger {
+            h3 {
+                font-size: 1rem !important;
+                text-align: center;
+            }
+            p {
+                font-size: 0.9rem !important;
+                text-align: center !important;
+            }
+        }
+    }
+}
