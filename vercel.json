@@ -1,11 +1,4 @@
 {
-    "rewrites": [
-      { "source": "/", "destination": "/index.html" },
-      { "source": "/drainage-lymphatique.html", "destination": "/pages/drainage-lymphatique.html" },
-      { "source": "/kobido", "destination": "/pages/kobido.html" },
-      { "source": "/soin-du-ventre", "destination": "/pages/soin-du-ventre.html" },
-      { "source": "/reflexologie-plantaire", "destination": "/pages/reflexologie-plantaire.html" },
-      { "source": "/tarifs", "destination": "/pages/tarifs.html" }
-    ]
-  }
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
   
