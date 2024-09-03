@@ -111,7 +111,10 @@
         align-items: center;
         justify-content: space-between;
         .logo {
-            font-size: 1rem !important;
+            a {
+                font-size: 1.2rem !important;
+            }
+            
         }
         .menu {
             display: none;
