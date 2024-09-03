@@ -9,6 +9,7 @@ export default defineConfig({
         drainage: resolve(__dirname, 'assets/pages/drainage-lymphatique.html'),
         kobido: resolve(__dirname, 'assets/pages/kobido.html'),
         soinventre: resolve(__dirname, 'assets/pages/soin-du-ventre.html'),
+        tarifs: resolve(__dirname, 'assets/pages/tarifs.html'),
       }
     }
   }
