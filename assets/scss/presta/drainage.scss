@@ -1,4 +1,4 @@
-@import '../variables.scss',  '../fonts.scss', '../medias.scss', './medias-drainage.scss';
+@import '../variables.scss',  '../fonts.scss', '../medias.scss', './medias-drainage.scss', '../main.scss';
 
 // ----------------------------------------- TITLE PRESTA -----------------------------------------
 #title-page {
@@ -32,7 +32,7 @@
 
 // ----------------------------------------- PRESENTATION -----------------------------------------
 
-#presentationD {
+#presentation {
     display: flex;
     justify-content: center;
     align-items: center;
