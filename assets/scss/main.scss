@@ -73,10 +73,13 @@ body {
     margin: 0 auto;
     height: 100px;
     .logo{
-        font-size: 1.5rem;
-        font-family: 'halimun', sans-serif;
-        justify-self: start;
-        color: $tertiary-color;
+        a {
+            font-size: 1.5rem;
+            font-family: 'halimun', sans-serif;
+            justify-self: start;
+            color: $tertiary-color;
+            text-decoration: none;
+        }
     }
     ul {
         display: flex;

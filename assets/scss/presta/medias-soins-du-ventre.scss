@@ -1,5 +1,18 @@
 @media screen and (max-width: 767px){
 
+    //--------------------------------------- LOGO -------------------------------------------------
+
+    .navbar {
+        .logo{
+            a {
+                font-size: 1.2rem !important;
+                font-family: 'halimun', sans-serif;
+                justify-self: start;
+                color: $tertiary-color;
+                text-decoration: none;
+            }
+        }
+    }
     //--------------------------------------- Title ------------------------------------------------
     #title-page {
         display: flex;
