@@ -3,11 +3,10 @@ let menuSm = document.getElementById('menu-sm');
 let svgBtn = document.querySelector('.img-btn-menu');
 let btnNext = document.querySelector('.next');
 let btnPrev = document.querySelector('.prev');
+let banner = document.querySelector('.banner');
 let currentIndex = 0;
 const slides = document.querySelector('.carousel-slides');
 const totalSlides = document.querySelectorAll('.carousel-item').length;
-
-
 
 btnMenu.addEventListener('click', () => {
     menuSm.classList.toggle('hidden');

@@ -1,0 +1,90 @@
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+
+    #title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 3rem !important;
+            padding: 2rem 0 !important;
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    #infos {
+        .infos {
+            width: 100% !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 3rem !important;
+            padding: 2rem 0 !important;
+            h1 {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+    #infos {
+        .infos {
+            width: 100% !important;
+            .check-info {
+                width: 80% !important;
+            }
+        }
+        .more-infos {
+            p {
+                text-align: center !important;
+            }
+        }
+    }
+
+    #duration-price {
+        .infos-formule {
+            p {
+                text-align: center;
+            }
+            .formule-1, .formule-2, .formule-3 {
+                .indicator {
+                    text-align: center;
+                }
+                p {
+                    text-align: start;
+                }
+            }
+        }
+        .infos-cta {
+            .price {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

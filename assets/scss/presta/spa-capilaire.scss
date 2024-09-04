@@ -1,0 +1,188 @@
+@import '../variables.scss',  '../fonts.scss', '../medias.scss', './medias-spa-capilaire.scss', '../main.scss';
+
+// ----------------------------------------- TITLE PRESTA -----------------------------------------
+#title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 3rem;
+    .title-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        gap: 10rem;
+        h1 {
+            font-size: 2.5rem;
+            font-family: 'halimun';
+            color: $dark-color;
+            text-align: center;
+        }
+        img{
+            width: 250px;
+            height: 300px;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+    }
+}
+
+// ----------------------------------------- PRESENTATION -----------------------------------------
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .presentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1200px;
+        width: 60%;
+        gap: 0.5rem;
+        p {
+            font-size: 1.2rem;
+            font-family: 'cormorant';
+            color: $dark-color;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+}
+
+// ----------------------------------------- INFOS -----------------------------------------
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 7rem;
+    padding: 3rem 0 5rem 0;
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 80%;
+        gap: 2.5rem;
+        h3 {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+// ----------------------------------------- MORE-INFOS -----------------------------------------
+
+#more-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: $secondary-color;
+    .more-infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        max-width: 1200px;
+        width: 50%;
+        gap: 1rem;
+        background-color: $secondary-color;
+        p {
+            font-size: 1.2rem;
+            font-family: 'cormorant';
+            color: #fff;
+            text-align: start;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
+
+// ----------------------------------------- DURATION PRICE -----------------------------------------
+
+#duration-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    .duration-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        width: 60%;
+        gap: 2.5rem;
+        .infos-formule {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: start;
+            .formule{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                p {
+                    font-weight: normal;
+                    font-size: 1rem;
+                    font-family: 'circe';
+                }
+                .indicator {
+                    font-weight: 600;
+                    padding: 0.5rem 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .infos-cta {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                .duration {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+                    p {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        br {
+                            display: none;
+                        }
+                        span {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+            .btn-secondary {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 1.5rem;
+            }
+        
+        }
+
+        
+    }
+}

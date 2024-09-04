@@ -93,9 +93,39 @@ body {
             color: $tertiary-color;
             text-transform: uppercase;
             font-size: 0.9rem;
+            text-align: center;
         }
         a:hover {
             color: $secondary-color;
+        }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            padding: 1rem 2rem;
+            background-color: $primary-color;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            a {
+                color: $tertiary-color;
+                text-decoration: none;
+                display: flex;
+            }
+            a:hover {
+                color: $secondary-color;
+            }
+        }
+        &:hover .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
         }
     }
 }
@@ -118,6 +148,30 @@ body {
             font-size: 0.9rem;
         }
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        .dropdown-content {
+            display: none;
+            top: 100%;
+            left: 0%;
+            padding: 1rem 2rem;
+            a {
+                color: $tertiary-color;
+                text-decoration: none;
+                display: flex;
+            }
+            a:hover {
+                color: $secondary-color;
+            }
+        }
+        &:hover .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
     &.hidden {
         display: none;
     }
@@ -127,13 +181,30 @@ body {
 }
 // ---------------------------------------- BANNER ------------------------------------------------
 .banner {
+    transform: translateY(+100%);
+    animation: all 1.5s ease-in;
+    filter: blur(2px);
+    opacity:0;
+    animation: show 1s ease-in-out forwards;
+    overflow: hidden;
     background-image: url('../img/cabinet.jpg') ;
     height: 412px;
     width: 100%;
     background-size:cover;
     background-position: center;
     position: relative;
-
+    @keyframes show {
+        0% {
+            transform: translateY(+100%);
+            filter: blur(2px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
     .text-banner {
         display: flex;
         flex-direction: column;
@@ -177,9 +248,26 @@ body {
 
 // ------------------------------------- ABOUT --------------------------------------------
 #text-about {
+    transform: translateY(+100%);
+    animation: all 1.5s ease-in;
+    filter: blur(2px);
+    opacity:0;
+    animation: show 1.5s 0.2s ease-in-out forwards;
+    overflow: hidden;
     background-color: $secondary-color;
     width: 100%;
-
+    @keyframes show {
+        0% {
+            transform: translateY(+100%);
+            filter: blur(2px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
 
     .about {
         display: flex;
@@ -218,11 +306,29 @@ body {
 // ------------------------------------- SOINS --------------------------------------------
 
 #soins {
+    transform: translateY(+100%);
+    animation: all 1.5s ease-in-out;
+    filter: blur(2px);
+    opacity:0;
+    animation: show 1s 0.7s ease forwards;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding: 2rem 0;
+    @keyframes show {
+        0% {
+            transform: translateY(+100%);
+            filter: blur(2px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
         h2 {
             color: $tertiary-color;
             font-size: 1.5rem;
@@ -451,11 +557,15 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: $tertiary-color;
-                p {
-                    font-family: 'halimun', sans-serif;
-                    line-height: 2.5rem;
+                a {
+                    text-decoration: none;
+                    color: $tertiary-color;
+                    p {
+                        font-family: 'halimun', sans-serif;
+                        line-height: 2.5rem;
+                    }
                 }
+
             }
             .footer-social {
                 display: flex;
@@ -474,9 +584,10 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                p {
+                a {
                     color: $tertiary-color;
                     line-height: 2rem;
+                    text-decoration: none;
                 }
             }
             .footer-adress {
@@ -490,8 +601,10 @@ footer {
             }
         }
         .footer-menu {
+            display: flex;
             position: relative;
             padding-right: 1.5rem;
+            gap: 1.5rem;
             ul {
                 list-style: none;
                 display: flex;
