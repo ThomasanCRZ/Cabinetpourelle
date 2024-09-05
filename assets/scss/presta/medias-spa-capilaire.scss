@@ -24,6 +24,14 @@
             width: 80% !important;
         }
     }
+    #more-infos-capilaire {
+        .more-infos {
+            width: 80% !important;
+            p {
+                text-align: center !important;
+            }
+        }
+    }
 }
 
 
@@ -53,6 +61,14 @@
             width: 80% !important;
         }
         .more-infos {
+            p {
+                text-align: center !important;
+            }
+        }
+    }
+    #more-infos-capilaire {
+        .more-infos {
+            width: 80% !important;
             p {
                 text-align: center !important;
             }
