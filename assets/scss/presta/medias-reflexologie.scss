@@ -1,0 +1,140 @@
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    //--------------------------------------- Title ------------------------------------------------
+        #title-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto !important;
+            .title-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 1200px;
+                gap: 2rem !important;
+                padding: 2rem 0 !important;
+                h1 {
+                    font-size: 1.5rem !important;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        // ----------------------------------------- WHY -----------------------------------------
+    
+        #why {
+            .why {
+                width: 80% !important;
+                h3 {
+                    font-size: 1.5rem !important;
+                }
+                .why-text {
+                    width: 100% !important;
+                }
+            }
+        }
+    
+        // ----------------------------------------- DANGER -----------------------------------------
+    
+        #danger {
+            .danger {
+                h3 {
+                    font-size: 1rem !important;
+                    text-align: center;
+                }
+                p {
+                    font-size: 0.9rem !important;
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    @media screen and (max-width: 767px) {
+            //--------------------------------------- LOGO -------------------------------------------------
+    
+            .navbar {
+                .logo{
+                    a {
+                        font-size: 1.2rem !important;
+                        font-family: 'halimun', sans-serif;
+                        justify-self: start;
+                        color: $tertiary-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        //--------------------------------------- Title ------------------------------------------------
+        #title-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto !important;
+            .title-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 1200px;
+                gap: 2rem !important;
+                padding: 2rem 0 !important;
+                h1 {
+                    font-size: 1.2rem !important;
+                    br {
+                        display: none;
+                    }
+                }
+                img {
+                    width: 200px !important;
+                    height: 250px !important;
+                }
+            }
+        }
+    
+        // ----------------------------------------- INFOS -----------------------------------------
+
+        #infos {
+            .infos {
+                .check-info {
+                    min-width: 300px !important;
+                    justify-content: center !important;
+                    .info {
+                        width: 45% !important;
+                    }
+                }
+            }
+        }
+        // ----------------------------------------- WHY -----------------------------------------
+    
+        #why {
+            .why {
+                width: 80% !important;
+                h3 {
+                    font-size: 1.5rem !important;
+                }
+                .why-text {
+                    width: 100% !important;
+                }
+            }
+        }
+    
+        // ----------------------------------------- DANGER -----------------------------------------
+    
+        #danger {
+            .danger {
+                h3 {
+                    font-size: 1rem !important;
+                    text-align: center;
+                }
+                p {
+                    font-size: 0.9rem !important;
+                    text-align: center !important;
+                }
+            }
+        }
+    }
