@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
     //--------------------------------------- Title ------------------------------------------------
-        #title-page {
+        #title-page-reflexologie {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,7 +25,7 @@
     
         // ----------------------------------------- WHY -----------------------------------------
     
-        #why {
+        #why-reflexologie {
             .why {
                 width: 80% !important;
                 h3 {
@@ -39,7 +39,7 @@
     
         // ----------------------------------------- DANGER -----------------------------------------
     
-        #danger {
+        #danger-reflexologie {
             .danger {
                 h3 {
                     font-size: 1rem !important;
@@ -56,21 +56,9 @@
     
     
     @media screen and (max-width: 767px) {
-            //--------------------------------------- LOGO -------------------------------------------------
-    
-            .navbar {
-                .logo{
-                    a {
-                        font-size: 1.2rem !important;
-                        font-family: 'halimun', sans-serif;
-                        justify-self: start;
-                        color: $tertiary-color;
-                        text-decoration: none;
-                    }
-                }
-            }
+
         //--------------------------------------- Title ------------------------------------------------
-        #title-page {
+        #title-page-reflexologie {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -98,7 +86,7 @@
     
         // ----------------------------------------- INFOS -----------------------------------------
 
-        #infos {
+        #infos-reflexologie {
             .infos {
                 .check-info {
                     min-width: 300px !important;
@@ -111,7 +99,7 @@
         }
         // ----------------------------------------- WHY -----------------------------------------
     
-        #why {
+        #why-reflexologie {
             .why {
                 width: 80% !important;
                 h3 {
@@ -125,7 +113,7 @@
     
         // ----------------------------------------- DANGER -----------------------------------------
     
-        #danger {
+        #danger-reflexologie {
             .danger {
                 h3 {
                     font-size: 1rem !important;

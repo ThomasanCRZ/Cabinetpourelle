@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
 //--------------------------------------- Title ------------------------------------------------
-    #title-page {
+    #title-page-drainage {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,7 +18,7 @@
     }
 //--------------------------------------- Illustrations ------------------------------------------------
 
-    #illustrations {
+    #illustrations-drainage {
         .illustrations {
             grid-template-columns: repeat(3, 0.5fr) !important;
             gap: 5rem !important;
@@ -27,7 +27,7 @@
 
     // ----------------------------------------- WHY -----------------------------------------
 
-    #why {
+    #why-drainage {
         .why {
             h3 {
                 font-size: 1.5rem !important;
@@ -40,7 +40,7 @@
 
     // ----------------------------------------- DANGER -----------------------------------------
 
-    #danger {
+    #danger-drainage {
         .danger {
             h3 {
                 font-size: 1rem !important;
@@ -71,7 +71,7 @@
             }
         }
     //--------------------------------------- Title ------------------------------------------------
-    #title-page {
+    #title-page-drainage {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -98,7 +98,7 @@
     }
 //--------------------------------------- Illustrations ------------------------------------------------
 
-    #illustrations {
+    #illustrations-drainage {
         .illustrations {
             grid-template-columns: 1fr !important;
             gap: 5rem !important;
@@ -108,7 +108,7 @@
 
     // ----------------------------------------- BEFORE AFTER -----------------------------------------
 
-    #befores-afters {
+    #befores-afters-drainage {
         height: 700px !important;
         .before-after {
             flex-direction: column !important;
@@ -121,7 +121,7 @@
     }
     // ----------------------------------------- WHY -----------------------------------------
 
-    #why {
+    #why-drainage {
         .why {
             h3 {
                 font-size: 1.5rem !important;
@@ -134,7 +134,7 @@
 
     // ----------------------------------------- DANGER -----------------------------------------
 
-    #danger {
+    #danger-drainage {
         .danger {
             h3 {
                 font-size: 1rem !important;

@@ -1,7 +1,7 @@
-@import '../variables.scss', '../main.scss',  '../fonts.scss', '../medias.scss', './medias-soins-du-ventre.scss';
+@import './medias-soins-du-ventre.scss';
 
 // ----------------------------------------- TITLE PRESTA -----------------------------------------
-#title-page {
+#title-page-ventre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
 
 // ----------------------------------------- PRESENTATION -----------------------------------------
 
-#presentation {
+#presentation-ventre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@
 
 // ----------------------------------------- INFOS -----------------------------------------
 
-#infos {
+#infos-ventre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@
 
 // ----------------------------------------- BEFORES-AFTERS -----------------------------------------
 
-#befores-afters {
+#befores-afters-ventre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,7 @@
 
 // ----------------------------------------- WHY -----------------------------------------
 
-#why {
+#why-ventre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +175,7 @@
 
 // ----------------------------------------- DURATION PRICE -----------------------------------------
 
-#duration-price {
+#duration-price-ventre {
     display: flex;
     justify-content: center;
     align-items: center;

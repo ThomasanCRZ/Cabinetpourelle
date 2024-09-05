@@ -1,7 +1,7 @@
-@import '../variables.scss',  '../fonts.scss', '../medias.scss', './medias-reflexologie.scss', '../main.scss';
+@import './medias-reflexologie.scss';
 
 // ----------------------------------------- TITLE PRESTA -----------------------------------------
-#title-page {
+#title-page-reflexologie {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
 
 // ----------------------------------------- PRESENTATION -----------------------------------------
 
-#presentation {
+#presentation-reflexologie {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@
 
 // ----------------------------------------- INFOS -----------------------------------------
 
-#infos {
+#infos-reflexologie {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@
 
 // ----------------------------------------- WHY -----------------------------------------
 
-#why {
+#why-reflexologie {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@
 
 // ----------------------------------------- DANGER -----------------------------------------
 
-#danger {
+#danger-reflexologie {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,19 +173,21 @@
         h3 {
             font-size: 1rem;
             text-transform: uppercase;
+            color: $light-color;
         }
 
         p {
             font-size: 1rem;
             font-weight: 400;
             text-transform: uppercase;
+            color: $light-color;
         }
     }
 }
 
 // ----------------------------------------- DURATION PRICE -----------------------------------------
 
-#duration-price {
+#duration-price-reflexologie {
     display: flex;
     justify-content: center;
     align-items: center;

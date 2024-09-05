@@ -1,7 +1,7 @@
-@import '../variables.scss',  '../fonts.scss', '../medias.scss', './medias-hydraface.scss', '../main.scss';
+@import './medias-hydraface.scss';
 
 // ----------------------------------------- TITLE PRESTA -----------------------------------------
-#title-page {
+#title-page-hydraface {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
 
 // ----------------------------------------- PRESENTATION -----------------------------------------
 
-#presentation {
+#presentation-hydraface {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@
 
 // ----------------------------------------- INFOS -----------------------------------------
 
-#infos {
+#infos-hydraface {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +122,7 @@
 
 // ----------------------------------------- DANGER -----------------------------------------
 
-#danger {
+#danger-hydraface {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,19 +144,21 @@
             text-transform: uppercase;
             font-family: 'circe';
             font-weight: 600;
+            color: $light-color;
         }
 
         p {
             font-size: 0.9rem;
             font-family: 'circe';
             text-transform: uppercase;
+            color: $light-color;
         }
     }
 }
 
 // ----------------------------------------- DURATION PRICE -----------------------------------------
 
-#duration-price {
+#duration-price-hydraface {
     display: flex;
     justify-content: center;
     align-items: center;

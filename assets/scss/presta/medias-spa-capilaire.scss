@@ -1,35 +1,6 @@
 @media screen and (min-width: 767px) and (max-width: 1000px) {
 
-    #title-page {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto !important;
-        .title-page {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 1200px;
-            gap: 3rem !important;
-            padding: 2rem 0 !important;
-            h1 {
-                font-size: 2rem !important;
-            }
-        }
-    }
-
-    #infos {
-        .infos {
-            width: 80% !important;
-        }
-    }
-}
-
-
-@media screen and (max-width: 767px) {
-
-    #title-page {
+    #title-page-capilaire {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,7 +19,36 @@
         }
     }
 
-    #infos {
+    #infos-capilaire {
+        .infos {
+            width: 80% !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #title-page-capilaire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            gap: 3rem !important;
+            padding: 2rem 0 !important;
+            h1 {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+    #infos-capilaire {
         .infos {
             width: 80% !important;
         }
@@ -59,7 +59,7 @@
         }
     }
 
-    #duration-price {
+    #duration-price-capilaire {
         .infos-formule {
             p {
                 text-align: center;

@@ -1,4 +1,13 @@
-@import './variables.scss', './medias.scss', './fonts.scss';
+@import './variables.scss',
+         './medias.scss',
+          './fonts.scss',
+          './presta/drainage.scss',
+          './presta/hydraface.scss',
+          './presta/kobido.scss',
+          './presta/reflexologie.scss',
+          './presta/soins-du-ventre.scss',
+          './presta/spa-capilaire.scss',
+          './presta/tarifs.scss';
 
 * {
     margin: 0;

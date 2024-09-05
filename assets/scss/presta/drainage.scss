@@ -1,7 +1,7 @@
-@import '../variables.scss',  '../fonts.scss', '../medias.scss', './medias-drainage.scss', '../main.scss';
+@import './medias-drainage.scss';
 
 // ----------------------------------------- TITLE PRESTA -----------------------------------------
-#title-page {
+#title-page-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@
 
 // ----------------------------------------- PRESENTATION -----------------------------------------
 
-#presentation {
+#presentation-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@
 
 // ----------------------------------------- ILLUSTRATIONS -----------------------------------------
 
-#illustrations {
+#illustrations-drainage {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@
 
 // ----------------------------------------- INFOS -----------------------------------------
 
-#infos {
+#infos-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +121,7 @@
 
 // ----------------------------------------- BEFORES-AFTERS -----------------------------------------
 
-#befores-afters {
+#befores-afters-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +145,7 @@
 
 // ----------------------------------------- WHY -----------------------------------------
 
-#why {
+#why-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +188,7 @@
 
 // ----------------------------------------- DANGER -----------------------------------------
 
-#danger {
+#danger-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,18 +205,20 @@
 
         h3 {
             font-size: 1rem;
+            color: $light-color;
         }
 
         p {
             font-size: 1rem;
             font-weight: 600;
+            color: $light-color;
         }
     }
 }
 
 // ----------------------------------------- DURATION PRICE -----------------------------------------
 
-#duration-price {
+#duration-price-drainage {
     display: flex;
     justify-content: center;
     align-items: center;
