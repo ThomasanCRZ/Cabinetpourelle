@@ -145,7 +145,7 @@
                 font-style: italic;
             }
             p {
-                font-size: 1rem;
+                font-size: 1.1rem;
                 font-family: 'cormorant';
                 color: $dark-color;
             }
@@ -173,14 +173,14 @@
         h3 {
             font-size: 1rem;
             text-transform: uppercase;
-            color: $light-color;
+            color: $dark-color;
         }
 
         p {
             font-size: 1rem;
             font-weight: 400;
             text-transform: uppercase;
-            color: $light-color;
+            color: $dark-color;
         }
     }
 }
